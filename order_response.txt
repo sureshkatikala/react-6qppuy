@@ -1,0 +1,113 @@
+{
+    "success": "true",
+    "all_order": [
+        {
+            "order_id": "20180927104056website",
+            "order_number" : "THIS ORDER NUMBER IS THE SAME AS THE Order_Number IN order OBJECT"
+            "order": [
+                {
+                    "item_order_id":"LOGIC IS order_id IN all_order OBJECT + INDEX OF ITEM. FOR EXAMPLE IT SHOULD BE 20180927104056website_1",
+                    "order_id":"SAME order_id AS IN all_order OBJECT",
+                    "cus_phone": "9711470295",
+                    "cus_name": "Rishi Kumar",
+                    "cus_address": "d27, rps palms, sector 88, faridabad",
+                    "mer_id": "website",
+                    "Recipe_SKU": "REC-GR/DAM/ALL",
+                    "Recipe_Name": "Dal Makhani",
+                    "rec_cuisine": "Indian, Indian",
+                    "Recipe_Servings": "4, 2",
+                    "Recipe_Quantity": "1, 1",
+                    "rec_price": "269, 209",
+                    "sub_total": "478",
+                    "discount_percentage": "0",
+                    "discount": "0",
+                    "new_cus_discount": "0",
+                    "sgst": "11.95",
+                    "cgst": "11.95",
+                    "del_charges": "0",
+                    "total_price": "502",
+                    "grcash": "0",
+                    "walletcash": "0",
+                    "final_amount": "502",
+                    "payment_type": "Cash On Delivery",
+                    "payment_status": "Payment not collected",
+                    "add_notes": "",
+                    "del_time": "27-09-18/11am-12pm",
+                    "order_at": "2018-09-27 10:40:56",
+                    "order_cancel_till": "2018-09-27 10:50:56",
+                    "Order_Status ": "Under Processing",
+                    "Order_Number": "27",
+                    "delivery_expected": "2018-09-27 11:40:49",
+                    "dispatch_real": null,
+                    "number_of_ingredient": "14",
+                    "selected_position":"USED TO HIGHLIGHT WHICH INGREDIENT POSITION WAS LAST VISITED , INITIAL IT SHOULD BE -1 AND IF THE ITEM IS FULLY PACKED THEN IT SHOULD BE -2"
+                    "ingredient": [
+                        {
+                            "ingredient_id":"LOGIC IS item_order_id + INDEX OF INGREDIENT. FOR EXAMPLE IT SHOULD BE 20180927104056website_1_1",
+                            "item_id":"SAME item_order_id AS IN order OBJECT",
+                            "ingredient_index": "1",
+                            "slip_name": "GHEE",
+                            "ingredient_is_packed_complete":"THIS CHECKS WHTEHR THE INGREDIENT IS FULLY PACKED OR NOT , ie ALL ingredient_detail OBJECT IS PACKED OR NOT , boolean,initial value false",
+                            "ingredient_is_deleted":"boolean,initial value false",
+                            "ingredient_is_labeled":"boolean,initial value false",
+                            "selected_ingredient_position":"STORE THE SELECTED INGREDIENT POSITION INSIDE AN ITEM , INITIAL VALUE -1 FROM SERVER , -2 IF THE ITEM IS COMPLETELY PACKED",
+                            "ingredient_measured_total_weight":"INITIAL VALUE 0.0 FROM SERVER , ONCE THE INGREDIENT IS PACKED , IT WILL STORE THE FINAL PACKED WEIGHT"
+                            "ingredient_detail": [
+                                {
+                                    "ingredient_detail_id":"THIS SHOULD BE A UNIQUE ID FOR EVERY INGREDIENT , COMPLEX LOGIC IS USED AT APP END CURRENTLY , IF REQUIRED I CAN SEND YOU THE LOGIC",
+                                    "ingredient_id":"SAME AS ingredient_id IN ingredient OBJECT",
+                                    "ingredient_name": "GHEE",
+                                    "ingredient_quantity": "20",
+                                    "ingredient_measure": "GMS",
+                                    "ingredient_section": "DAIRY",
+                                    "ingredient_process": "PORTIONING",
+                                    "ingredient_is_packed":"INITIAL VALUE false , CONVERTED TO true if the ingredient_detail OBJECT IS PACKED",
+                                    "ingredient_pack_timestamp":"TIMESTAMP WHEN THE ITEM WAS FULLY PACKED,INITIAL VALUE "" -- EMPTY STRING " ,
+                                    "ingredient_is_deleted":"INITIAL VALUE false , CONVERTED TO true if the ingredient is DELETED FROM THE BACKEND",
+                                    "ingredient_is_weighed":"INITIAL VALUE false,IF THE ingredient_detail IS WEIGHED , THIS BOOLEAN VALUE IS CONVERTED TO TRUE",
+                                    "ingredient_detail_index":"SAME AS ingredient_index AT ingredient level",
+                                    "ingredient_detail_position":"STORE THE INDEX OF ingredient_detail IN A PARTICULAR ingredient OBJECT , FOR THIS PARTICULAR OBJECT IT SHOULD BE 1",
+                                    "ingredient_measured_weight":"FINAL MEASURED WEIGHT WHEN THE INGREDIENT IS PACKED,INITIAL VALUE 0.0 FROM SERVER "
+
+
+
+                                }
+                            ]
+                        },
+                        {
+                            "ingredient_id":"LOGIC IS item_order_id + INDEX OF INGREDIENT. FOR EXAMPLE IT SHOULD BE 20180927104056website_1_2",
+                            "item_id":"SAME item_order_id AS IN order OBJECT",
+                            "ingredient_index": "14",
+                            "slip_name": "CREAM FOR GARNISH",
+                            "ingredient_is_packed_complete":"boolean,initial value false",
+                            "ingredient_is_deleted":"boolean,initial value false",
+                            "ingredient_is_labeled":"boolean,initial value false",
+                            "selected_ingredient_position":"STORE THE SELECTED INGREDIENT POSITION INSIDE AN ITEM , INITIAL VALUE -1 FROM SERVER , -2 IF THE ITEM IS COMPLETELY PACKED",
+                            "ingredient_measured_total_weight":"INITIAL VALUE 0 FROM SERVER , ONCE THE INGREDIENT IS PACKED , IT WILL STORE THE FINAL PACKED WEIGHT"
+                            "ingredient_detail": [
+                                {
+                                    "ingredient_detail_id":"THIS SHOULD BE A UNIQUE ID FOR EVERY INGREDIENT , COMPLEX LOGIC IS USED AT APP END CURRENTLY , IF REQUIRED I CAN SEND YOU THE LOGIC",
+                                    "ingredient_id":"SAME AS ingredient_id IN ingredient OBJECT",
+                                    "ingredient_name": "CREAM",
+                                    "ingredient_quantity": "10",
+                                    "ingredient_measure": "GMS",
+                                    "ingredient_section": "DAIRY",
+                                    "ingredient_process": "PORTIONING",
+                                    "ingredient_is_packed":"INITIAL VALUE false , CONVERTED TO true if the ingredient_detail OBJECT IS PACKED",
+                                    "ingredient_pack_timestamp":"TIMESTAMP WHEN THE ITEM WAS FULLY PACKED,INITIAL VALUE "" -- EMPTY STRING " ,
+                                    "ingredient_is_deleted":"INITIAL VALUE false , CONVERTED TO true if the ingredient is DELETED FROM THE BACKEND",
+                                    "ingredient_is_weighed":"INITIAL VALUE false,IF THE ingredient_detail IS WEIGHED , THIS BOOLEAN VALUE IS CONVERTED TO TRUE",
+                                    "ingredient_detail_index":"SAME AS ingredient_index AT ingredient level",
+                                    "ingredient_detail_position":"STORE THE INDEX OF ingredient_detail IN A PARTICULAR ingredient OBJECT , FOR THIS PARTICULAR OBJECT IT SHOULD BE 2",
+                                    "ingredient_measured_weight":"FINAL MEASURED WEIGHT WHEN THE INGREDIENT IS PACKED,INITIAL VALUE 0.0 FROM SERVER "
+
+                                }
+                            ]
+                        }
+                    ]
+                }
+
+            ]
+        }
+    ]
+}
